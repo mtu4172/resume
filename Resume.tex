@@ -1,0 +1,205 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemSkills}[2]{
+  \item\normalsize{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemExperience}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubheadingEducation}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    %   \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubItemSkills}[2]{\resumeItemSkills{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListStartSkillsAwards}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+    \centerline{\textbf{\huge Michael Tu}}\vspace{0.15cm}
+    \centerline{Email : \href{mailto:}{mtu4172@gmail.com} $|$
+    Mobile : 813-474-8289 $|$
+    GitHub : \href{http://github.com/mtu4172}{mtu4172} $|$
+    LinkedIn : \href{http://linkedin.com/in/mtu4172}{mtu4172}}
+% \end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {B.S in Computer Science; GPA: 3.90/4.00}{Aug 2021 -- May 2025}
+    \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+            {Data Structures and Algorithms, Linear Algebra, Discrete Mathematics, Statistics, Programming Fundamentals I/II, Computer Organization}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {Teaching Assistant: COP3502C - Programming Fundamentals I}{Aug 2022 -- Present}
+      \resumeItemListStart
+        \resumeItemExperience
+          {Conducted office hours and gave weekly lectures to students enrolled in introductory Python programming course.}
+        \resumeItemExperience
+          {Aided instructor in grading and providing feedback on student coursework including exams, labs, and projects.}
+        \resumeItemExperience
+          {Helped develop course content, including programming projects, instructional materials, and study guides.}
+        \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    % \resumeSubHeadingListStart
+        \resumeSubheadingProject
+          {WordHunt Solver}{Nov 2021 -- Dec 2021, Oct 2022}
+          \resumeItemListStart
+            \resumeItemExperience
+              {Wrote a C++ app to solve the popular iMessage word puzzle game WordHunt.}
+            \resumeItemExperience
+              {Implemented a backtracking algorithm to find words hidden in a 2D character array. Used a Trie data structure to store dictionary and validate candidate words.}
+          \resumeItemListEnd
+        \resumeSubheadingProject
+          {Minesweeper}{April 2022}
+          \resumeItemListStart
+            \resumeItemExperience
+              {Built a C++ app emulating the classic puzzle game, with added functionality including toggleable debug mode.}
+            \resumeItemExperience
+              {Utilized Simple Fast Multimedia Library (SFML) API to support graphics and UI.}
+          \resumeItemListEnd
+          \resumeSubheadingProject
+          {Database Research Project}{Feb 2021 -- May 2021}
+          \resumeItemListStart
+            \resumeItemExperience
+              {Investigated the relationship between query size on relational database performance, comparing speed of full table and index scans. Both clustered and non-clustered indexes stored in B+ trees were tested.}
+            \resumeItemExperience
+              {Used Microsoft SQL Server and T-SQL to evaluate performance on TPC-H benchmark.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+%-----------Activities-----------------
+\section{Involvement}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Filipino Student Association (FSA)}{Gainesville, FL}
+        {Multimedia Chair}{June 2022 -- Present}
+        \resumeItemListStart
+          \resumeItemExperience
+            {Produced videos promoting Filipino culture, dance, and on-campus activities using Adobe After Effects.}
+          \resumeItemExperience
+            {Collaborated with fellow board members to plan and organize social events for 300+ students.}
+          \resumeItemExperience
+            {Aided in running first-year involvement program, held meetings to guide students through the process of producing communicative media.}
+        \resumeItemListEnd
+      \resumeSubheading
+        {HackGT 8 CTF Challenge}{Atlanta, GA}
+        {Participant, Rank 16/88}{Oct 2021}
+        \resumeItemListStart
+          \resumeItemExperience
+            {Applied knowledge of cybersecurity concepts including cryptography, web exploitation, and reverse engineering to solve challenges for hidden flags.}
+             \resumeItemExperience
+            {Learned to identify software vulnerabilities and use technologies such as SSH and Wireshark.}
+    \resumeSubHeadingListEnd
+          
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStartSkillsAwards
+   \resumeSubItemSkills{Languages}{(Proficient) C++, Python, Java, MATLAB; (Familiar) SQL, JavaScript, R, ARM Assembly}
+ \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStartSkillsAwards
+    \resumeSubItemSkills{National Merit Finalist}
+      {Scored within the 99th percentile on the PSAT}
+    \resumeSubItemSkills{University of Florida Dean's List}
+      {College of Liberal Arts and Sciences (Fall 2021- Spring 2022)}
+  \resumeSubHeadingListEnd
+  
+\end{document}
